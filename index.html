@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="pageTitle">Benefits For Seniors</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+
+  <body>
+    <a href="https://cdn.sppoints.xyz/click" class="hidden" id="rtRef"></a>
+    <div class="bg-red-700 mx-auto text-center py-2">
+      <h1 class="text-xl text-white font-bold mx-4 sm:mx-0">
+        Breaking: Millions of Seniors On Medicare Are Upgrading Their Plans To
+        Claim A $2,500 Spending Card!
+      </h1>
+    </div>
+    <div
+      id="mainContainer"
+      class="mx-auto md:pt-4 pt-1 px-4 md:px-0 max-w-5xl text-center container"
+    >
+      <h1
+        class="text-center break-normal text-2xl md:text-3xl mx-auto my-4 px-2"
+      >
+        Seniors On Medicare Can Get Hundreds In Savings.
+        <span class="font-bold">Tap Below To Qualify!</span>
+      </h1>
+      <img class="mx-auto my-2 w-full md:w-3/4" src="assets/images/hero.jpg" />
+      <p class="my-3 md:text-xl" style="text-align: left">
+        Many elderly Americans are quickly updating their 2024 Medicare plans to
+        obtain a $2,500 spending card. This card allows them to
+        <span class="font-bold">purchase goods at numerous stores</span>
+        nationwide.
+      </p>
+      <p class="my-3 md:text-xl" style="text-align: left">
+        Unfortunately, a large number of seniors might lose the opportunity to
+        secure this card as the registration period is drawing to a close.
+        Ensure you're eligible by responding to two questions below
+        <span class="font-bold">before it's too late.</span>
+      </p>
+      <div>
+        <div id="display1" class="md:mt-8 mt-4">
+          <h3 class="font-bold text-center md:text-4xl text-3xl my-8">
+            What is your age range?
+          </h3>
+          <div class="grid grid-cols-1 gap-6">
+            <button
+              id="btn-3"
+              class="flex justify-center bg-green-500 hover:bg-green-500 tracking-wide text-white font-bold rounded-2xl w-3/4 mx-auto border-b-2 border-green-500 uppercase shadow-md md:py-6 py-4 md:text-2xl px-6 items-center"
+            >
+              Under 64
+            </button>
+            <button
+              id="btn-1"
+              class="flex justify-center bg-green-500 hover:bg-green-500 tracking-wide text-white font-bold rounded-2xl w-3/4 mx-auto border-b-2 border-green-500 uppercase shadow-md md:py-6 py-4 md:text-2xl px-6 items-center"
+            >
+              64 - 75
+            </button>
+            <button
+              id="btn-2"
+              class="flex justify-center bg-green-500 hover:bg-green-500 tracking-wide text-white font-bold rounded-2xl w-3/4 mx-auto border-b-2 border-green-500 uppercase shadow-md md:py-6 py-4 md:text-2xl px-6 items-center"
+            >
+              76 and older
+            </button>
+          </div>
+        </div>
+        <div id="display2" class="md:mt-8 mt-4 hidden">
+          <h3 class="font-bold text-center md:text-4xl text-3xl my-8">
+            Are You On Medicare or Medicaid?
+          </h3>
+          <div class="grid grid-cols-1 gap-6">
+            <button
+              id="btn-yes"
+              class="flex justify-center bg-green-500 hover:bg-green-500 tracking-wide text-white font-bold rounded-2xl w-3/4 mx-auto border-b-2 border-green-500 uppercase shadow-md md:py-6 py-4 md:text-2xl px-6 items-center cta_btn btn_2"
+            >
+              Yes
+            </button>
+            <button
+              id="btn-no"
+              class="flex justify-center bg-green-500 hover:bg-green-500 tracking-wide text-white font-bold rounded-2xl w-3/4 mx-auto border-b-2 border-green-500 uppercase shadow-md md:py-6 py-4 md:text-2xl px-6 items-center cta_btn btn_2"
+            >
+              No
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="display4"
+      class="hidden hidden mx-auto md:pt-4 pt-1 px-4 md:px-0 max-w-5xl container"
+    >
+      <div
+        class="p-6 border-t-2 border-blue-500 mt-4 bg-gray-300 text-center shadow-xl"
+      >
+        <h3 class="text-xl md:text-2xl font-bold text-blue-600 mb-4">
+          Congratulations!
+        </h3>
+        <p class="text-xl md:text-2xl font-bold mb-4">
+          You Pre-Qualify For
+          <span class="text-red-600">The Healthy Allowance Card!</span>
+        </p>
+        <p class="">
+          Don't miss out - Speak to an official agent to claim your benefit card
+          now.
+        </p>
+        <a href="tel:+1 (844) 487-0575">
+          <button
+            class="capitalize font-bold bg-green-500 animate__animated animate__pulse animate__infinite text-white my-4 p-5 shadow-2xl md:text-2xl text-base"
+          >
+            Click to Call +1 (844) 487-057
+          </button>
+        </a>
+
+        <!-- <p class="font-bold mb-4">We Have Reserved Your Spot.</p> -->
+        <p class="mb-4">
+          Due to high call volume, your official agent is only waiting for
+          <span class="text-bold">3 minutes...</span> then your spot will not be
+          held and will be given to the next caller.
+        </p>
+
+        <div
+          id="countdown"
+          class="border-2 border-red-500 border-dashed w-max px-6 py-2 mx-auto"
+        >
+          <span class="text-red-500" id="time"></span>
+        </div>
+      </div>
+    </div>
+    <div
+      id="display5"
+      class="hidden hidden mx-auto md:pt-4 pt-1 px-4 md:px-0 max-w-5xl container"
+    >
+      <div
+        class="p-6 border-t-2 border-blue-500 mt-4 bg-gray-300 text-center shadow-xl"
+      >
+        <a href="/">
+          <button
+            class="capitalize font-bold bg-red-500 animate__animated animate__pulse animate__infinite text-white my-4 p-5 shadow-2xl md:text-2xl text-base"
+          >
+            Sorry You Do Not Qualify
+          </button>
+        </a>
+      </div>
+    </div>
+    <section
+      id="progress-container"
+      class="hidden flex justify-center items-center flex-col mt-10 mb-10 w-50"
+    >
+      <div id="progress-bar" class="flex justify-center items-center flex-col">
+        <h4
+          id="progress-text-1"
+          class="progress-bar__text hidden text-3xl mb-5"
+        >
+          Reviewing your answers...
+        </h4>
+        <h4
+          id="progress-text-2"
+          class="progress-bar__text hidden text-3xl mb-5"
+        >
+          Matching with best options...
+        </h4>
+        <h4
+          id="progress-text-3"
+          class="progress-bar__text hidden text-3xl mb-5"
+        >
+          Confirming eligibility...
+        </h4>
+        <div
+          class="progress-bar__container"
+          style="
+            width: 50%;
+            height: 2rem;
+            border-radius: 2rem;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.5s;
+            will-change: transform;
+            box-shadow: 0 0 5px #ffc438;
+          "
+        >
+          <div
+            class="progress-bar"
+            style="
+              position: absolute;
+              height: 100%;
+              width: 100%;
+              background-color: #ffc438;
+              top: 0;
+              bottom: 0;
+              left: -100%;
+              border-radius: inherit;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: white;
+              font-family: sans-serif;
+            "
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="footer mt-12 footer-center p-4 mt-12 mb-2 text-center max-w-6xl mx-auto text-xs"
+    >
+      <div class="grid grid-flow-col gap-3 md:w-1/3 mx-auto my-8">
+        <a class="link link-hover" href="/terms"> Terms & Conditions </a>
+        <p class="text-blue-500">|</p>
+        <a class="link link-hover" href="/privacy"> Privacy Policy </a>
+
+        <p class="text-blue-500">|</p>
+        <a class="link link-hover" href="/privacy.php#caresidents"> CCPA </a>
+      </div>
+      <div class="mt-8">
+        <p>Copyright Golden Years Benefits © 2024 - All right reserved</p>
+      </div>
+    </footer>
+    <script src="https://cdn.sppoints.xyz/track.js?rtkcmpid=RTK_CMP_ID_HERE"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
